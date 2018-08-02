@@ -1,31 +1,43 @@
-const playerOneRockButtonEvent = () => {
+const updatePlayerOneName = () => {
+  console.log('updating player one name')
+  const playerName = document.querySelector('.p1-name-input').value
+  document.querySelector('player-one-name').textContent = playerName
+}
+
+const updatePlayerTwoName = () => {
+  console.log('updating player one name')
+  const playerName = document.querySelector('.p2-name-input').value
+  document.querySelector('.p2-name-input').textContent = playerName
+}
+
+const playerOneRockButtonSelected = () => {
   console.log('Player one rock button clicked')
   playerOneSelects = 'rock'
 }
-const playerOnePaperButtonEvent = () => {
+const playerOnePaperButtonSelected = () => {
   console.log('Player One paper button clicked')
   playerOneSelects = 'paper'
 }
-const playerOneScissorsButtonEvent = () => {
+const playerOneScissorsButtonSelected = () => {
   console.log('Player One scissors button clicked')
   playerOneSelects = 'scissors'
 }
-const playerTwoRockButtonEvent = () => {
+const playerTwoRockButtonSelected = () => {
   console.log('Player Two rock button clicked')
   playerTwoSelects = 'rock'
 }
-const playerTwoPaperButtonEvent = () => {
+const playerTwoPaperButtonSelected = () => {
   console.log('Player Two paper button clicked')
   playerTwoSelects = 'paper'
 }
-const playerTwoScissorsButtonEvent = () => {
+const playerTwoScissorsButtonSelected = () => {
   console.log('Player Two scissors button clicked')
   playerTwoSelects = 'scissors'
 }
 
-document.querySelector('.p1-rock-button').addEventListener('click', playerOneRockButtonEvent) 
-document.querySelector('.p1-paper-button').addEventListener('click', playerOnePaperButtonEvent)
-document.querySelector('.p1-scissors-button').addEventListener('click', playerOneScissorsButtonEvent)
-document.querySelector('.p2-rock-button').addEventListener('click', playerTwoRockButtonEvent)
-document.querySelector('.p2-paper-button').addEventListener('click', playerTwoPaperButtonEvent)
-document.querySelector('.p2-scissors-button').addEventListener('click', playerTwoScissorsButtonEvent)
+document.querySelector('.p1-rock-button').addEventListener('click', playerOneRockButtonSelected) 
+document.querySelector('.p1-paper-button').addEventListener('click', playerOnePaperButtonSelected)
+document.querySelector('.p1-scissors-button').addEventListener('click', playerOneScissorsButtonSelected)
+document.querySelector('.p2-rock-button').addEventListener('click', playerTwoRockButtonSelected)
+document.querySelector('.p2-paper-button').addEventListener('click', playerTwoPaperButtonSelected)
+document.querySelector('.p2-scissors-button').addEventListener('click', playerTwoScissorsButtonSelected)

@@ -12,9 +12,10 @@
   <header class="headline">Rock vs Paper vs Scissors</header>
 
   <section class="players">
-    <section>
-      <h2>Player 1</h2>
-      <button>Update Name</button>
+    <section class="player-one">
+      <h2 class="player-one-name">Player 1</h2>
+      <input class="p1-name-input" type="text" placeholder="Update Player Name">
+      <button class="p1-change-name-button">Update Name</button>
       <section>
         <h4>Select One Option:</h4>
         <button class="p1-rock-button">Rock</button>
@@ -27,34 +28,22 @@
       </section>
     </section>
 
-    <section>
-        <h2>Player 2</h2>
-        <button>Update Name</button>
-        <section>
-          <h4>Select Two Option:</h4>
-          <button class="p2-rock-button">Rock</button>
-          <button class="p2-paper-button">Paper</button>
-          <button class="p2-scissors-button">Scissors</button>
-        </section>
-        <section>
-          <h2>Player 2 chooses:</h2>
-          <h1>???</h1>
-        </section>
+    <section class="player-two">
+      <h2 class="player-two-name">Player 2</h2>
+      <input class="p2-name-input" type="text" placeholder="Update Player Name">
+      <button class="p2-change-name-button">Update Name</button>
+      <section>
+        <h4>Select One Option:</h4>
+        <button class="p2-rock-button">Rock</button>
+        <button class="p2-paper-button">Paper</button>
+        <button class="p2-scissors-button">Scissors</button>
       </section>
+      <section>
+        <h2>Player 2 chooses:</h2>
+        <h1>???</h1>
+      </section>
+    </section>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <script src="/main.js" charset="utf-8"></script>
 </body>
