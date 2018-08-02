@@ -14,27 +14,40 @@ const playerTwoUpdateNameButtonClickEvent = () => {
 
 const playerOneRockButtonSelected = () => {
   console.log('Player one rock button clicked')
-  playerOneSelects = 'rock'
+  const currentValue = document.querySelector('.p1-rock-button').value
+  console.log(currentValue)
+  document.querySelector('.p1-choice').textContent = 'Rock!'
 }
 const playerOnePaperButtonSelected = () => {
   console.log('Player One paper button clicked')
-  playerOneSelects = 'paper'
+  const currentValue = document.querySelector('.p1-paper-button').value
+  console.log(currentValue)
+  document.querySelector('.p1-choice').textContent = 'Paper!'
 }
 const playerOneScissorsButtonSelected = () => {
   console.log('Player One scissors button clicked')
-  playerOneSelects = 'scissors'
+  const currentValue = document.querySelector('.p1-scissors-button').value
+  console.log(currentValue)
+  document.querySelector('.p1-choice').textContent = 'Scissors!'
 }
 const playerTwoRockButtonSelected = () => {
   console.log('Player Two rock button clicked')
-  playerTwoSelects = 'rock'
+  const currentValue = document.querySelector('.p2-rock-button').value
+  console.log(currentValue)
+  document.querySelector('.p2-choice').textContent = 'Rock!'
 }
 const playerTwoPaperButtonSelected = () => {
   console.log('Player Two paper button clicked')
-  playerTwoSelects = 'paper'
+  const currentValue = document.querySelector('.p2-paper-button').value
+  console.log(currentValue)
+  document.querySelector('.p2-choice').textContent = 'Paper!'
 }
+
 const playerTwoScissorsButtonSelected = () => {
   console.log('Player Two scissors button clicked')
-  playerTwoSelects = 'scissors'
+  const currentValue = document.querySelector('.p2-scissors-button').value
+  console.log(currentValue)
+  document.querySelector('.p2-choice').textContent = 'Scissors!'
 }
 
 document.querySelector('.p2-change-name-button').addEventListener('click', playerTwoUpdateNameButtonClickEvent)
