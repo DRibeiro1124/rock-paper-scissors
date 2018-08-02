@@ -1,7 +1,8 @@
-const updatePlayerOneName = () => {
+const playerOneUpdateNameButtonClickEvent = () => {
   console.log('updating player one name')
-  const playerName = document.querySelector('.p1-name-input').value
-  document.querySelector('player-one-name').textContent = playerName
+  const currentValue = document.querySelector('.p1-name-input').value
+  console.log(currentValue) 
+  document.querySelector('.player-one-name').textContent = currentValue
 }
 
 const updatePlayerTwoName = () => {
@@ -35,6 +36,7 @@ const playerTwoScissorsButtonSelected = () => {
   playerTwoSelects = 'scissors'
 }
 
+document.querySelector('.p1-change-name-button').addEventListener('click', playerOneUpdateNameButtonClickEvent)
 document.querySelector('.p1-rock-button').addEventListener('click', playerOneRockButtonSelected) 
 document.querySelector('.p1-paper-button').addEventListener('click', playerOnePaperButtonSelected)
 document.querySelector('.p1-scissors-button').addEventListener('click', playerOneScissorsButtonSelected)
