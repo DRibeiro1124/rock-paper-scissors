@@ -1,0 +1,16 @@
+opt 2 Parallel Arrays
+
+const suits = ["S", "H", "D", "C"]
+const ranks = [ a 2 3 4 .... all inside ""]
+const card_values = [11, 2, 3, 4, 5,...]
+const deck= []
+
+for (let s = 0; s < suits.length; s++) {
+    for (let r = 0; r < ranks.length; r++) {
+        deck.push({
+            suit: suits[r]
+            rank: ranks [r]
+            
+        })
+    }
+}
